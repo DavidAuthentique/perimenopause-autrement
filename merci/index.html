@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenue dans ta traversée - Périménopause autrement</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1711071876762972');
+    fbq('track', 'PageView');
+  </script>
+      <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=1711071876762972&ev=PageView&noscript=1"/>
+      </noscript>
+      <!-- End Meta Pixel Code -->
+      <style>
+        :root {
+          --creme: #f6f1e9;
+          --brun: #2f2a25;
+      --grenat: #8a3a2e;
+      --sepia: #8c7a63;
+}
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+            background: var(--creme);
+      color: var(--brun);
+      font-family: Georgia, "Times New Roman", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      line-height: 1.6;
+}
+    .carte { max-width: 620px; text-align: center; }
+    .marque {
+            font-size: 15px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--sepia);
+      margin-bottom: 40px;
+}
+    .coeur { font-size: 40px; margin-bottom: 20px; }
+    h1 {
+            font-size: 34px;
+      font-weight: normal;
+      line-height: 1.25;
+      margin-bottom: 24px;
+}
+    p { font-size: 18px; color: #4a443c; margin-bottom: 20px; }
+    .signature {
+            font-style: italic;
+      color: var(--grenat);
+      font-size: 19px;
+      margin-top: 28px;
+}
+    .note { font-size: 15px; color: var(--sepia); margin-top: 40px; }
+  </style>
+    </head>
+    <body>
+      <main class="carte">
+        <div class="marque">Femmes . Périménopause autrement</div>
+        <div class="coeur">&#129293;</div>
+        <h1>Bienvenue dans ta traversée</h1>
+    <p>Ton paiement est confirmé, et on est tellement heureuses de t'accueillir.</p>
+        <p>
+          Prochaine étape pour rejoindre la communauté : vérifie ta boîte courriel.
+          Tu vas recevoir un message de bienvenue avec le lien de notre premier
+      rassemblement sur Zoom, le 12 août.
+        </p>
+        <p class="signature">À très vite,<br>Marie-Lou &amp; Émilie</p>
+        <p class="note">Tu peux fermer cette page en toute tranquillité.</p>
+      </main>
+      <!-- Purchase : lit le montant transmis par Stripe dans l'URL -->
+      <script>
+        (function () {
+          var params = new URLSearchParams(window.location.search);
+      var raw = params.get('value');
+      var allowed = { '44': 44, '397': 397 };
+      var currency = (params.get('currency') || 'CAD').toUpperCase();
+      if (window.fbq) {
+        if (raw && Object.prototype.hasOwnProperty.call(allowed, raw)) {
+          fbq('track', 'Purchase', {
+                        value: allowed[raw],
+                        currency: currency,
+                        content_name: 'Femmes - Vivre ta perimenopause autrement'
+            });
+        } else {
+          fbq('track', 'Purchase', {
+                        currency: currency,
+                        content_name: 'Femmes - Vivre ta perimenopause autrement'
+            });
+}
+      }
+})();
+  </script>
+    </body>
+    </html>
